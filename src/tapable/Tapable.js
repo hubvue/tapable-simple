@@ -2,17 +2,17 @@
  * @name Tapable
  * 
  */
-const SyncHook = require("./SyncHook");
-const SyncBailHook = require("./SyncBailHook");
-const SyncLoopHook = require("./SyncLoopHook");
-const SyncWaterfallHook = require("./SyncWaterfallHook");
-const AsyncParallelHook = require("./AsyncParallelHook");
-const AsyncParallelBailHook = require("./AsyncParallelBailHook");
-const AsyncSeriesHook = require("./AsyncSeriesHook");
-const AsyncSeriesBailHook = require("./AsyncSeriesBailHook");
-const AsyncSeriesWaterfallHook = require("./AsyncSeriesWaterfallHook");
+import SyncHook from "./SyncHook";
+import SyncBailHook from "./SyncBailHook";
+import SyncLoopHook from "./SyncLoopHook";
+import SyncWaterfallHook from "./SyncWaterfallHook";
+import AsyncParallelHook from "./AsyncParallelHook";
+import AsyncParallelBailHook from "./AsyncParallelBailHook";
+import AsyncSeriesHook from "./AsyncSeriesHook";
+import AsyncSeriesBailHook from "./AsyncSeriesBailHook";
+import AsyncSeriesWaterfallHook from "./AsyncSeriesWaterfallHook";
 
-module.exports = {
+export default {
     SyncHook,
     SyncBailHook,
     SyncLoopHook,
