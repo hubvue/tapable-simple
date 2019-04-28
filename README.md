@@ -22,6 +22,18 @@ const {
 
 ### SyncHook,
 同步串行任务执行，任务间彼此没有联系。当前任务执行完，再执行下一个任务。
+```js
+//SyncHook必须接受一个数组作为参数。
+const hooks = new SyncHook(['hook']);
+
+//使用tap方法订阅消息
+hooks.tap('tap',(name)=> {
+    console.log(name); //tapable
+})
+
+//使用call方法广播消息，这里的参数传递的个数取决于构造函数参数数组的长度。
+hooks.call("tapable");
+```
 ### SyncBailHook,
 同步串行任务执行，一些列任务中，如果让前任务的返回值可转换为false(undefine 不算) ，则终止任务进行。
 ### SyncLoopHook,
