@@ -1,6 +1,6 @@
 /**
  * @name SyncBailHook
- * @description 同步串行任务执行，一些列任务中，如果让前任务的返回值可转换为false(undefine 不算) ，则终止任务进行。
+ * @description 同步串行任务执行，一些列任务中，如果前任务的返回值可转换为false(undefine 不算) ，则终止任务进行。
  */
 class SyncBailHook {
     constructor(args){
